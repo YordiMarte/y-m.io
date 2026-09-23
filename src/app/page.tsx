@@ -175,7 +175,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://www.linkedin.com/in/brianruizy/"
+        href="https://www.linkedin.com/in/yordimarte/"
         target="_blank"
         rel="noopener noreferrer"
         variant="secondary"
@@ -198,9 +198,9 @@ export default async function Home() {
             {homeHeroTitle}
           </h1>
           <p className="mt-6 text-base text-muted-foreground">
-            Software Engineer at Hines, and currently building{' '}
+            Software Engineer at Kivoff, and currently building{' '}
             <Link
-              href="https://joinbeam.app"
+              href="https://kivoff.vercel.app/"
               className="link-underline inline-flex items-center gap-1"
             >
               <span
@@ -217,36 +217,31 @@ export default async function Home() {
                   WebkitMaskPosition: 'center',
                 }}
               />
-              Beam
+              Kivoff
             </Link>
-            . Focused on crafting delightful digital products. Based in NYC. I
-            also make{' '}
-            <Link
-              href="https://www.youtube.com/@brianruizy"
-              className="link-underline"
-            >
-              videos
-            </Link>{' '}
-            about tech, and daily life for a community of 100K+ subscribers.
+            {' '}
+            . Focused on creating their digital products. Based in Santo Domingo.
+            I occasionally write about programming, productivity, and more.
+
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
-              href="https://x.com/brianruizy"
+              href="https://x.com/MarteJose66792"
               aria-label="Follow on X"
               icon={XIcon}
             />
             <SocialLink
-              href="https://www.instagram.com/brianruizy"
+              href="https://www.instagram.com/yordi.marte/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://www.youtube.com/@brianruizy"
+              href="https://www.youtube.com/@YordiMarteio"
               aria-label="Follow on YouTube"
               icon={YouTubeIcon}
             />
             <SocialLink
-              href="https://www.github.com/brianruizy"
+              href="https://www.github.com/YordiMarte"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
