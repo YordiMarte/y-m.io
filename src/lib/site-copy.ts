@@ -1,2 +1,1 @@
-export const homeHeroTitle =
-  'Software engineer, designer, and part-time YouTuber.'
+export const homeHeroTitle = 'hey, Yordi here!'
