@@ -92,7 +92,7 @@ export default function Projects() {
           A mix of open-source experiments and products I&apos;ve built at work,
           across a range of frameworks and languages. You can find even more on my{' '}
           <a
-            href="https://www.github.com/brianruizy"
+            href="https://www.github.com/YordiMarte"
             className="link-underline"
           >
             GitHub

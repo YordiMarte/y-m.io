@@ -1,6 +1,6 @@
 # Yordi Marte
 
-Personal site for [y-m.io](https://b-r.io) — portfolio, writing, projects, and uses.
+Personal site for [y-m.io](https://y-m.io) — portfolio, writing, projects, and uses.
 
 ## Stack
 
