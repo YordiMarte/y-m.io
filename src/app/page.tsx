@@ -21,7 +21,9 @@ import {
 import { PhotoGallery } from '@/components/PhotoGallery'
 import logoBeamIcon from '@/images/logos/beam-icon-borderless.svg'
 import logoCams from '@/images/logos/cams-white.png'
+import logoHackeRank from '@/images/logos/logoHackeRank.svg'
 import logoHines from '@/images/logos/hines.svg'
+import logoKivoff from '@/images/logos/logoKivoff.svg'
 import logoPeriship from '@/images/logos/periship.png'
 import { formatDate } from '@/lib/formatDate'
 import { getAllPosts, type Post } from '@/lib/posts'
@@ -131,35 +133,23 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Hines',
-      title: 'Sr. Software Engineer',
-      initials: 'H',
-      logo: logoHines,
-      start: '2021',
+      company: 'Kivoff',
+      title: 'Software Engineer',
+      initials: 'K',
+      logo: logoKivoff,
+      start: '2024',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'PeriShip (FedEx)',
+      company: 'HackerRank',
       title: 'Software Engineer',
-      initials: 'P',
-      logo: logoPeriship,
-      logoBgClass: 'bg-neutral-100',
-      logoPadding: 'p-1',
-      start: '2020',
-      end: '2021',
-    },
-    {
-      company: 'CAMS',
-      title: 'Python Developer',
-      initials: 'C',
-      logo: logoCams,
-      logoBgClass: 'bg-sky-600',
-      logoPadding: 'p-2',
-      start: '2019',
-      end: '2020',
+      initials: 'H',
+      logo: logoHackeRank,
+      start: '2023',
+      end: '2024',      
     },
   ]
 
