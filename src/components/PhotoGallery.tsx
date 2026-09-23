@@ -6,32 +6,32 @@ import { motion } from 'motion/react'
 import { cn } from '@/lib/utils'
 import { bouncy, dragSpring, dragTransition } from '@/lib/transitions'
 
-import bikingImage from '@/images/photos/biking.jpeg'
-import deskSunsetImage from '@/images/photos/desk-sunset.jpeg'
-import juneImage from '@/images/photos/june.jpeg'
-import selfieImage from '@/images/photos/selfie.jpeg'
-import empireImage from '@/images/photos/empire.jpeg'
+import antHillImage from '@/images/photos/ant hill.png'
+import selfiePngImage from '@/images/photos/selfie.png'
+import summyImage from '@/images/photos/summy.svg'
+import chillImage from '@/images/photos/chill....png'
+import tennisImage from '@/images/photos/tennis.png'
 
 const photos = [
   {
-    image: empireImage,
-    alt: 'Empire State Building',
+    image: antHillImage,
+    alt: 'Ant hill photo',
   },
   {
-    image: bikingImage,
-    alt: 'Brian Ruiz on an e-bike',
+    image: selfiePngImage,
+    alt: 'Selfie photo',
   },
   {
-    image: deskSunsetImage,
-    alt: 'Desk setup at sunset',
+    image: summyImage,
+    alt: 'Summy artwork',
   },
   {
-    image: selfieImage,
-    alt: 'Brian Ruiz selfie',
+    image: chillImage,
+    alt: 'Chill photo',
   },
   {
-    image: juneImage,
-    alt: 'Brian Ruiz in June',
+    image: tennisImage,
+    alt: 'Tennis photo',
   },
 ]
 
