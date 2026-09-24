@@ -30,7 +30,7 @@ export function Footer() {
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-muted-foreground">
-                &copy; {new Date().getFullYear()} Brian Ruiz. All rights
+                &copy; {new Date().getFullYear()} Yordi Marte. All rights
                 reserved.
               </p>
             </div>
