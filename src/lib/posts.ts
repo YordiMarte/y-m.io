@@ -25,7 +25,9 @@ interface VideoMeta {
   description: string
   author: string
   date: string
-  youtubeId: string
+  youtubeId?: string
+  externalLink?: string
+  externalLabel?: string
   coverImage?: string
   ogImage?: string
 }
@@ -50,7 +52,7 @@ function getPostShareImage(post: PostMeta) {
     return { url: post.coverImage, size: undefined }
   }
 
-  if (post.type === 'video') {
+  if (post.type === 'video' && post.youtubeId) {
     return {
       url: getYouTubeThumbnailUrl(post.youtubeId),
       size: { width: 1280, height: 720 },
@@ -111,5 +113,7 @@ export async function getAllPosts() {
 
   let posts = await Promise.all(postFilenames.map(importPost))
 
-  return posts.sort((a, z) => +new Date(z.date) - +new Date(a.date))
+  return posts
+    .filter((post) => post.type !== 'video')
+    .sort((a, z) => +new Date(z.date) - +new Date(a.date))
 }

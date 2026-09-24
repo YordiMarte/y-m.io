@@ -13,16 +13,15 @@ import { Button } from '@/components/Button'
 import { formatDate } from '@/lib/formatDate'
 import { type Post } from '@/lib/posts'
 
-type Filter = 'all' | 'article' | 'video'
+type Filter = 'all' | 'article'
 
 const filters: Array<{ label: string; value: Filter }> = [
   { label: 'All', value: 'all' },
   { label: 'Articles', value: 'article' },
-  { label: 'Videos', value: 'video' },
 ]
 
 function parseFilter(value: string | null): Filter {
-  if (value === 'article' || value === 'video') return value
+  if (value === 'article') return value
   return 'all'
 }
 
@@ -65,7 +64,11 @@ function PostItem({ post }: { post: Post }) {
         </ContentCardEyebrow>
         <ContentCardDescription>{post.description}</ContentCardDescription>
         <ContentCardCta>
-          {post.type === 'article' ? 'Read article' : 'Watch video'}
+          {post.type === 'article'
+            ? 'Read article'
+            : post.type === 'video' && 'externalLink' in post && post.externalLink
+              ? 'View project'
+              : 'Watch video'}
         </ContentCardCta>
       </ContentCard>
       <ContentCardEyebrow

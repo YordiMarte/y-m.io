@@ -53,9 +53,23 @@ export function PostLayout({
               </p>
             </header>
 
-            {post.type === 'video' && (
+            {post.type === 'video' && post.externalLink ? (
+              <div className="mt-8 rounded-2xl border border-border bg-card p-6">
+                <p className="text-sm font-medium text-muted-foreground">
+                  Project
+                </p>
+                <a
+                  href={post.externalLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-flex items-center text-lg font-semibold text-foreground underline decoration-foreground/30 underline-offset-4 transition hover:decoration-foreground"
+                >
+                  {post.externalLabel ?? 'View project'}
+                </a>
+              </div>
+            ) : post.type === 'video' && post.youtubeId ? (
               <YouTubeEmbed id={post.youtubeId} title={post.title} />
-            )}
+            ) : null}
 
             {post.type === 'article' && post.coverImage && (
               <div className="mt-8 overflow-hidden rounded-2xl bg-muted">
