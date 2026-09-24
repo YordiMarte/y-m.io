@@ -23,7 +23,7 @@ interface Project {
 
 const projects: Array<Project> = [
   {
-    name: 'Beam',
+    name: 'Kivoff',
     description:
       'A project and task manager built for iPhone first, with widgets, calendar views, Siri, and a companion Mac app.',
     link: {
@@ -33,7 +33,7 @@ const projects: Array<Project> = [
     logo: logoBeam,
   },
   {
-    name: 'GDH App',
+    name: 'v0',
     description:
       'A React Router 7 investment management and reporting app for Hines private commercial real estate.',
     link: {
@@ -43,7 +43,7 @@ const projects: Array<Project> = [
     logo: logoAnimaginary,
   },
   {
-    name: '@hines/ui',
+    name: 'Ky',
     description:
       'The internal design system for Hines — 40+ accessible components powering our web apps.',
     link: {
@@ -53,9 +53,9 @@ const projects: Array<Project> = [
     logo: logoOpenShuttle,
   },
   {
-    name: 'COVID-19 Dashboard',
+    name: 'Kova',
     description:
-      'A Django and Plotly dashboard for exploring pandemic data through an interactive, data-driven interface.',
+      '1.',
     link: {
       href: 'https://github.com/brianruizy/covid19-dashboard',
       label: 'github.com/brianruizy/covid19-dashboard',
@@ -63,12 +63,12 @@ const projects: Array<Project> = [
     logo: logoHelioStream,
   },
   {
-    name: 'Next Notion Portfolio',
+    name: 'Infera',
     description:
-      'A Next.js portfolio template that uses Notion as a flexible content management system.',
+      'AI Inference Gateway with rate limiting, caching, token billing and observability.',
     link: {
-      href: 'https://github.com/brianruizy/next-notion-portfolio',
-      label: 'github.com/brianruizy/next-notion-portfolio',
+      href: 'https://github.com/YordiMarte/infera',
+      label: 'github.com/YordiMarte/infera',
     },
     logo: logoCosmos,
   },
