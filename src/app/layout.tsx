@@ -26,14 +26,14 @@ const sourceSerif = Source_Serif_4({
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
 
-const title = 'Brian Ruiz - Software engineer and creator in NYC'
+const title = 'Yordi Marte - Software engineer'
 const description =
-  'Software engineer in New York City crafting delightful user experiences and sharing videos about technology, productivity, design, and life.'
+  ':).'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    template: '%s - Brian Ruiz',
+    template: '%s - Yordi Marte',
     default: title,
   },
   description,
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     title,
     description,
     url: '/',
-    siteName: 'Brian Ruiz',
+    siteName: 'Yordi Marte',
     locale: 'en_US',
     type: 'website',
     images: siteOpenGraphImages,
