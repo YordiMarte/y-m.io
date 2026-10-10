@@ -8,11 +8,10 @@ import {
 } from '@/components/ContentCard'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { createPageMetadata } from '@/lib/metadata'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
 import logoBeam from '@/images/logos/beam-dark.png'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
+import logoV0 from '@/images/logos/v0.jpg'
+import logoKy from '@/images/logos/Ky.jpg'
+import logoKOVA from '@/images/logos/Kova.jpg'
 
 interface Project {
   name: string
@@ -25,52 +24,42 @@ const projects: Array<Project> = [
   {
     name: 'Kivoff',
     description:
-      'A project and task manager built for iPhone first, with widgets, calendar views, Siri, and a companion Mac app.',
+      'Kivoff is a software company that builds web applications, digital products and tools for businesses, leveraging AI to turn ideas into practical, scalable solutions.',
     link: {
-      href: 'https://joinbeam.app',
-      label: 'joinbeam.app',
+      href: 'https://github.com/YordiMarte/Kivoff',
+      label: 'Kivoff.app',
     },
     logo: logoBeam,
   },
   {
     name: 'v0',
     description:
-      'A React Router 7 investment management and reporting app for Hines private commercial real estate.',
+      '?',
     link: {
-      href: 'https://www.hines.com',
-      label: 'hines.com',
+      href: 'https://github.com/YordiMarte/v0',
+      label: 'v0.app',
     },
-    logo: logoAnimaginary,
+    logo: logoV0,
   },
   {
     name: 'Ky',
     description:
-      'The internal design system for Hines — 40+ accessible components powering our web apps.',
+      '?',
     link: {
-      href: 'https://www.hines.com',
-      label: '@hines/ui',
+      href: 'https://github.com/YordiMarte/Ky',
+      label: 'Ky.app',
     },
-    logo: logoOpenShuttle,
+    logo: logoKy,
   },
   {
     name: 'Kova',
     description:
-      '1.',
+      '?',
     link: {
-      href: 'https://github.com/brianruizy/covid19-dashboard',
-      label: 'github.com/brianruizy/covid19-dashboard',
+      href: 'https://github.com/YordiMarte/Kova',
+      label: 'Kova.app',
     },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'Infera',
-    description:
-      'AI Inference Gateway with rate limiting, caching, token billing and observability.',
-    link: {
-      href: 'https://github.com/YordiMarte/infera',
-      label: 'github.com/YordiMarte/infera',
-    },
-    logo: logoCosmos,
+    logo: logoKOVA,
   },
 ]
 
