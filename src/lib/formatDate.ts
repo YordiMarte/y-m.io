@@ -1,4 +1,8 @@
-export function formatDate(dateString: string) {
+export function formatDate(dateString: string | undefined) {
+  if (!dateString) {
+    return ''
+  }
+
   let normalizedDate = dateString.replace(
     /^(\d{4})-(\d{1,2})-(\d{1,2})$/,
     (_, year, month, day) =>
