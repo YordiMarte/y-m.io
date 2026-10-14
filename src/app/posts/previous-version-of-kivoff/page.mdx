@@ -1,0 +1,140 @@
+import { PostLayout } from '@/components/PostLayout'
+import { createPostMetadata } from '@/lib/posts'
+
+export const post = {
+  type: 'GitHub',
+  author: 'Yordi Marte',
+  date: '2025-11-8',
+  title: 'Kivoff-Legacy',
+  description:
+    'Previous version of Kivoff, preserved for reference and historical development.',
+  externalLink: 'https://github.com/YordiMarte/Kivoff-Legacy',
+  externalLabel: 'Kivoff-Legacy',
+}
+
+export const metadata = createPostMetadata(post)
+
+export default (props) => <PostLayout post={post} {...props} />
+
+# Kivoff-Legacy
+
+Backend infrastructure platform designed to support scalable services, internal APIs and system-level orchestration.
+
+---
+
+## Overview
+
+Kivoff is a backend-focused system built to simulate a real-world infrastructure layer used in modern applications.
+It provides a foundation for building scalable services, handling internal communication, and managing data persistence.
+
+The goal of this project is to demonstrate practical backend engineering skills beyond CRUD applications, focusing on structure, scalability and system design.
+
+---
+
+## Architecture
+
+```
+Client
+  ↓
+API Layer (Node.js / TypeScript)
+  ↓
+Service Layer
+  ↓
+Database (PostgreSQL)
+```
+
+---
+
+## Features
+
+* Modular backend architecture
+* Structured service layer
+* REST API design
+* Database integration with PostgreSQL
+* Environment-based configuration
+* Docker-ready setup
+
+---
+
+## Tech Stack
+
+* TypeScript
+* Node.js
+* PostgreSQL
+* Docker
+
+---
+
+## Project Structure
+
+```
+kivoff/
+├── src/
+│   ├── controllers/
+│   ├── services/
+│   ├── routes/
+│   ├── config/
+│   └── index.ts
+├── docker/
+├── .env
+└── README.md
+```
+
+---
+
+## ▶ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USER/kivoff.git
+cd kivoff
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the project
+
+```bash
+npm run dev
+```
+
+---
+
+## Docker
+
+```bash
+docker build -t kivoff .
+docker run -p 3000:3000 kivoff
+```
+
+---
+
+## Purpose
+
+This project was built as part of a backend engineering portfolio to demonstrate:
+
+* System design thinking
+* Clean architecture
+* Scalable backend patterns
+* Production-oriented structure
+
+---
+
+## Future Improvements
+
+* Authentication & authorization layer
+* Redis caching
+* Background jobs
+* Observability (OpenTelemetry)
+* Kubernetes deployment
+
+---
+
+## Author
+
+Yordi Marte - Software Engineer
