@@ -109,14 +109,29 @@ export function ContentCardEyebrow<T extends React.ElementType = 'p'>({
   )
 }
 
-export function ContentCardCta({ children }: { children: React.ReactNode }) {
-  return (
-    <div
-      aria-hidden="true"
-      className="relative z-10 mt-4 flex items-center text-sm font-medium text-accent"
-    >
+export function ContentCardCta({
+  children,
+  href,
+}: {
+  children: React.ReactNode
+  href?: string
+}) {
+  let className =
+    'relative z-30 mt-4 inline-flex items-center text-sm font-medium text-accent'
+  let content = (
+    <>
       {children}
-      <ChevronRightIcon className="ml-1 size-4" />
+      <ChevronRightIcon className="ml-1 size-4" aria-hidden="true" />
+    </>
+  )
+
+  return href ? (
+    <a href={href} target="_blank" rel="noreferrer" className={className}>
+      {content}
+    </a>
+  ) : (
+    <div aria-hidden="true" className={className}>
+      {content}
     </div>
   )
 }

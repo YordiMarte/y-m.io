@@ -63,12 +63,19 @@ function PostItem({ post }: { post: Post }) {
           {formatDate(post.date)}
         </ContentCardEyebrow>
         <ContentCardDescription>{post.description}</ContentCardDescription>
-        <ContentCardCta>
+        <ContentCardCta
+          href={
+            post.type === 'video' || post.type === 'GitHub'
+              ? post.externalLink
+              : undefined
+          }
+        >
           {post.type === 'article'
-            ? 'Read article'
-            : post.type === 'video' && 'externalLink' in post && post.externalLink
-              ? 'View project'
-              : 'Watch video'}
+            ? 'Learn more'
+            : (post.type === 'video' || post.type === 'GitHub') &&
+                post.externalLink
+              ? post.externalLabel ?? 'View project'
+              : 'Learn more'}
         </ContentCardCta>
       </ContentCard>
       <ContentCardEyebrow

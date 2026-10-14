@@ -7,7 +7,7 @@ import {
   createTwitterMetadata,
 } from '@/lib/metadata'
 
-export type PostType = 'article' | 'video'
+export type PostType = 'article' | 'Learn' | 'GitHub'
 
 interface ArticleMeta {
   type: 'article'
@@ -20,7 +20,7 @@ interface ArticleMeta {
 }
 
 interface VideoMeta {
-  type: 'video'
+  type: 'learn'
   title: string
   description: string
   author: string
@@ -32,7 +32,19 @@ interface VideoMeta {
   ogImage?: string
 }
 
-export type PostMeta = ArticleMeta | VideoMeta
+interface GitHubMeta {
+  type: 'GitHub'
+  title: string
+  description: string
+  author: string
+  date: string
+  externalLink: string
+  externalLabel?: string
+  coverImage?: string
+  ogImage?: string
+}
+
+export type PostMeta = ArticleMeta | VideoMeta | GitHubMeta
 
 export type Post = PostMeta & {
   slug: string
@@ -52,7 +64,7 @@ function getPostShareImage(post: PostMeta) {
     return { url: post.coverImage, size: undefined }
   }
 
-  if (post.type === 'video' && post.youtubeId) {
+  if (post.type === 'learn' && post.youtubeId) {
     return {
       url: getYouTubeThumbnailUrl(post.youtubeId),
       size: { width: 1280, height: 720 },
@@ -114,6 +126,6 @@ export async function getAllPosts() {
   let posts = await Promise.all(postFilenames.map(importPost))
 
   return posts
-    .filter((post) => post.type !== 'video')
+    .filter((post) => post.type !== 'learn')
     .sort((a, z) => +new Date(z.date) - +new Date(a.date))
 }

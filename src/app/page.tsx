@@ -20,11 +20,8 @@ import {
 } from '@/components/SocialIcons'
 import { PhotoGallery } from '@/components/PhotoGallery'
 import logoBeamIcon from '@/images/logos/beam-icon-borderless.svg'
-import logoCams from '@/images/logos/cams-white.png'
 import logoHackeRank from '@/images/logos/logoHackeRank.svg'
-import logoHines from '@/images/logos/hines.svg'
 import logoKivoff from '@/images/logos/logoKivoff.svg'
-import logoPeriship from '@/images/logos/periship.png'
 import { formatDate } from '@/lib/formatDate'
 import { getAllPosts, type Post } from '@/lib/posts'
 import { homeHeroTitle } from '@/lib/site-copy'
@@ -38,7 +35,7 @@ function LatestPost({ post }: { post: Post }) {
       </ContentCardEyebrow>
       <ContentCardDescription>{post.description}</ContentCardDescription>
       <ContentCardCta>
-        {post.type === 'article' ? 'Read article' : 'Watch video'}
+        Learn more
       </ContentCardCta>
     </ContentCard>
   )

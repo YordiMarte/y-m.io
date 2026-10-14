@@ -10,7 +10,7 @@ const heroTitle = 'Writing on coding, productivity, and life updates.'
 export const metadata = createPageMetadata({
   title: 'Posts',
   description:
-    'Articles and videos on software engineering, design, productivity, and life in New York City.',
+    '',
   heroTitle,
 })
 
@@ -20,7 +20,7 @@ export default async function Posts() {
   return (
     <SimpleLayout
       title={heroTitle}
-      intro="Longer posts and videos covering the work I do, the tools I use, and the occasional update from NYC. Some technical, some personal, all things I wanted to write down."
+      intro="A collection of my latest GitHub repositories, projects I'm building, and experiments with new technologies. A place to explore what I'm working on and what I've been learning. Stay tuned for more!"
     >
       <Suspense fallback={null}>
         <PostsList posts={posts} />

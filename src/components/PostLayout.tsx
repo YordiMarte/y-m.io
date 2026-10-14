@@ -53,7 +53,8 @@ export function PostLayout({
               </p>
             </header>
 
-            {post.type === 'video' && post.externalLink ? (
+            {(post.type === 'video' || post.type === 'GitHub') &&
+            post.externalLink ? (
               <div className="mt-8 rounded-2xl border border-border bg-card p-6">
                 <p className="text-sm font-medium text-muted-foreground">
                   Project

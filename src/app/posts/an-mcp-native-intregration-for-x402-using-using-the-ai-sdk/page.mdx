@@ -1,0 +1,77 @@
+import { PostLayout } from '@/components/PostLayout'
+import { createPostMetadata } from '@/lib/posts'
+
+export const post = {
+  type: 'GitHub',
+  author: 'Yordi Marte',
+  date: '2026-5-22',
+  title: 'x402-mcp',
+  description:
+    'An MCP native intregration for x402 using the AI SDK.',
+  externalLink: 'https://github.com/YordiMarte/x402-mcp',
+  externalLabel: 'x402-mcp',
+}
+
+export const metadata = createPostMetadata(post)
+
+export default (props) => <PostLayout post={post} {...props} />
+
+# x402 + MCP + AI SDK
+
+## Check out [apps/example](./apps/example) for a working example!
+
+```ts
+// server
+import { createPaidMcpHandler } from "ky";
+import z from "zod";
+
+const handler = createPaidMcpHandler(
+  (server) => {
+    server.paidTool(
+      "get_random_number",
+      "Get a random number between two numbers",
+      { price: 0.001 },
+      {
+        min: z.number().int(),
+        max: z.number().int(),
+      },
+      {},
+      async (args) => {
+        const randomNumber =
+          Math.floor(Math.random() * (args.max - args.min + 1)) + args.min;
+        return {
+          content: [{ type: "text", text: randomNumber.toString() }],
+        };
+      }
+    );
+  },
+  {
+    recipient: process.env.WALLET_ADDRESS,
+  }
+);
+
+export { handler as GET, handler as POST };
+
+// client
+import { convertToModelMessages, stepCountIs, streamText, UIMessage } from "ai";
+import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
+import { experimental_createMCPClient as createMCPClient } from "ai";
+import { withPayment } from "x402-mcp";
+
+const mcpClient = await createMCPClient({
+  transport: new StreamableHTTPClientTransport(url),
+}).then((client) => withPayment(client, { account: process.env.PRIVATE_KEY }));
+
+const tools = await mcpClient.tools();
+
+const result = streamText({
+  model,
+  tools,
+  messages: convertToModelMessages(messages),
+  stopWhen: stepCountIs(5),
+  onFinish: async () => {
+    await mcpClient.close();
+  },
+  system: "ALWAYS prompt the user to confirm before authorizing payments",
+});
+```
