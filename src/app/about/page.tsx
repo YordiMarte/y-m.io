@@ -14,7 +14,7 @@ import { Portrait } from '@/app/about/Portrait'
 import { createPageMetadata } from '@/lib/metadata'
 
 const heroTitle =
-  "I'm Brian. I live in New York City, building and sharing the journey."
+  "I'm Yordi. I live in Santo Domingo, building and sharing the journey."
 
 function SocialLink({
   className,

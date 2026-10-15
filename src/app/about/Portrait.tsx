@@ -16,7 +16,7 @@ export function Portrait() {
     >
       <Image
         src={portraitImage}
-        alt="Brian Ruiz in New York City"
+        alt="Yordi in Santo Domingo, Dominican Republic"
         sizes="(min-width: 1024px) 32rem, 20rem"
         className="aspect-square rotate-3 rounded-2xl bg-muted object-cover"
       />
