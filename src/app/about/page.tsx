@@ -43,7 +43,7 @@ function SocialLink({
 export const metadata = createPageMetadata({
   title: 'About',
   description:
-    'Brian Ruiz is a software engineer and creator based in New York City.',
+    'Yordi is a software engineer and creator based in Santo Domingo.',
   heroTitle,
 })
 
@@ -60,17 +60,12 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-muted-foreground">
             <p>
-              I was born in Honduras, grew up in Texas, and now live in New York
-              City. I got into coding because I liked creating things from
-              scratch. That same instinct still drives the work I do, both in
-              software and on camera.
-            </p>
-            <p>
-              I currently work at Hines as a Sr. Software Engineer, building
+              I currently work is building of Kivoff as a Software Engineer, building
               web apps at the enterprise level. Most of my time goes
               into making complex systems feel straightforward for the people
-              using them. On the side I&apos;m building Beam, a project and task
-              manager built for iPhone first, with a companion Mac app.
+              using them. On the side I&apos;m building v0, an AI assistant to create web interfaces. 
+              I'm also building Ky, an open-source library designed to make it easier to integrate Artificial Intelligence 
+              and language models (LLMs) into web applications.
             </p>
             <p>
               My expertise is in full-stack web development, but I really love
@@ -79,14 +74,8 @@ export default function About() {
               apps delightful to use that I find the most rewarding.
             </p>
             <p>
-              I also run a YouTube channel with more than 100,000 subscribers.
-              It started with photography and cameras, then grew into videos
-              about tech, productivity, and what building things day to day
-              actually looks like, sometimes with a little filmmaking mixed in.
-            </p>
-            <p>
               When I&apos;m not working, you&apos;ll usually find me at the gym,
-              riding my e-bike around the city, or at a coffee shop with a
+              running around the city, or at a coffee shop with a
               laptop nearby.
             </p>
           </div>
