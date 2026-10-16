@@ -83,45 +83,45 @@ export default function About() {
         <div className="lg:pl-20">
           <ul role="list">
             <SocialLink
-              href="https://www.instagram.com/brianruizy"
+              href="https://www.instagram.com/yordi.marte/"
               icon={InstagramIcon}
             >
               Follow on Instagram
             </SocialLink>
             <SocialLink
-              href="https://www.youtube.com/@brianruizy"
+              href="https://www.youtube.com/@YordiMarteio"
               icon={YouTubeIcon}
               className="mt-4"
             >
               Subscribe on YouTube
             </SocialLink>
             <SocialLink
-              href="https://www.github.com/brianruizy"
+              href="https://www.github.com/YordiMarte/"
               icon={GitHubIcon}
               className="mt-4"
             >
               Follow on GitHub
             </SocialLink>
             <SocialLink
-              href="https://www.linkedin.com/in/brianruizy/"
+              href="https://www.linkedin.com/in/yordimarte/"
               icon={LinkedInIcon}
               className="mt-4"
             >
               Connect on LinkedIn
             </SocialLink>
             <SocialLink
-              href="https://x.com/brianruizy"
+              href="https://x.com/MarteJose66792"
               icon={XIcon}
               className="mt-4"
             >
               Follow on X
             </SocialLink>
             <SocialLink
-              href="mailto:partners@b-r.io"
+              href="mailto:partners@yordymartegacia.com"
               icon={EnvelopeIcon}
               className="mt-8 border-t border-border pt-8"
             >
-              partners@b-r.io
+              partners
             </SocialLink>
           </ul>
         </div>
