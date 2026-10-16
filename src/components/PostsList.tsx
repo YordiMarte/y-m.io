@@ -65,14 +65,14 @@ function PostItem({ post }: { post: Post }) {
         <ContentCardDescription>{post.description}</ContentCardDescription>
         <ContentCardCta
           href={
-            post.type === 'video' || post.type === 'GitHub'
+            post.type === 'learn' || post.type === 'GitHub'
               ? post.externalLink
               : undefined
           }
         >
           {post.type === 'article'
             ? 'Learn more'
-            : (post.type === 'video' || post.type === 'GitHub') &&
+            : (post.type === 'learn' || post.type === 'GitHub') &&
                 post.externalLink
               ? post.externalLabel ?? 'View project'
               : 'Learn more'}
