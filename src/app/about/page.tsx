@@ -63,9 +63,8 @@ export default function About() {
               I currently work is building of Kivoff as a Software Engineer, building
               web apps at the enterprise level. Most of my time goes
               into making complex systems feel straightforward for the people
-              using them. On the side I&apos;m building v0, an AI assistant to create web interfaces. 
-              I'm also building Ky, an open-source library designed to make it easier to integrate Artificial Intelligence 
-              and language models (LLMs) into web applications.
+              using them. On the side I&apos;m building v0, An AI assistant that knows your company.
+              I'm also building Ky, Turn your APIs and MCP tools into revenue.
             </p>
             <p>
               My expertise is in full-stack web development, but I really love
