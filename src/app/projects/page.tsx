@@ -26,7 +26,7 @@ const projects: Array<Project> = [
     description:
       'Kivoff is a software company that builds web applications, digital products and tools for businesses, leveraging AI to turn ideas into practical, scalable solutions.',
     link: {
-      href: 'https://github.com/YordiMarte/Kivoff',
+      href: 'https://kivoff.vercel.app',
       label: 'Kivoff.app',
     },
     logo: logoBeam,
