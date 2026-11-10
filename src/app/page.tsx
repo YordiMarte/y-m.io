@@ -22,6 +22,7 @@ import { PhotoGallery } from '@/components/PhotoGallery'
 import logoBeamIcon from '@/images/logos/beam-icon-borderless.svg'
 import logoHackeRank from '@/images/logos/logoHackeRank.svg'
 import logoKivoff from '@/images/logos/logoKivoff.svg'
+import logoBeam from '@/images/logos/beam-dark.png'
 import { formatDate } from '@/lib/formatDate'
 import { getAllPosts, type Post } from '@/lib/posts'
 import { homeHeroTitle } from '@/lib/site-copy'
@@ -133,7 +134,7 @@ function Resume() {
       company: 'Kivoff',
       title: 'Software Engineer',
       initials: 'K',
-      logo: logoKivoff,
+      logo: logoBeam,
       start: '2024',
       end: {
         label: 'Present',
